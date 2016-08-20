@@ -1,0 +1,22 @@
+
+rosrun ORB_SLAM2 Mono ORBvoc.txt c270_2_3224.yaml false
+
+rosrun ORB_SLAM2 Mono ORBvoc.txt c270_2.yaml false
+
+export ROS_PACKAGE_PATH=${ROS_PACKAGE_PATH}:~/denny/ORB_SLAM2/Examples/ROS
+
+rosrun image_transport republish compressed in:=/md raw out:=/ardrone/front/image_raw
+
+rosrun joy joy_node
+
+rosrun rviz rviz
+
+rosrun using_markers add_marker.py
+
+
+
+rosrun image_view image_view image:=/usb_cam/image_raw compressed
+
+rosrun ardrone_autonomy ardrone_driver
+
+roslaunch ardrone_tutorials joystick_controller.launch

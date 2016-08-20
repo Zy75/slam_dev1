@@ -1,0 +1,8 @@
+
+rosrun usb_cam usb_cam_node
+
+roslaunch camera.launch
+
+rosrun image_transport republish raw in:=/usb_cam/ige_raw compressed out:=/md
+
+./run_motor.sh
