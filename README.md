@@ -2,6 +2,9 @@
 ORB_SLAM2 test using RPi2 car with camera
 [Monocular visual slam]
 
+LAPTOP: ubuntu14.04
+RPi2 : ubuntu14.04
+
 Joystick control RPi2 car ----> camera on RPi2 car moves -----> ORB_SLAM2 runs 
 
 note:
@@ -10,5 +13,5 @@ note:
 
 2. ORB_SLAM2 loses track often, though relocation is possible. My car can only move forward, backward and rotation. Is this charasteristic not suitable for monocular visual slam?  
  
-3. Accessing RPi's GPIO needs root. I've finally found how to do it. See run_motor.sh.  
+3. Accessing RPi's GPIO needs root and simple sudo rosrun doesn't work.  I've finally found how to do it. See run_motor.sh.  
 
