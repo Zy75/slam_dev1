@@ -10,5 +10,5 @@ note:
 
 2. ORB_SLAM2 loses track often, though relocation is possible. My car can only move forward, backward and rotation. Is this charasteristic not suitable for monocular visual slam?  
  
-3. 
+3. Accessing RPi's GPIO needs root. I've finally found how to do it. See run_motor.sh.  
 
