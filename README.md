@@ -3,6 +3,7 @@ ORB_SLAM2 test using RPi2 car with camera
 [Monocular visual slam]
 
 LAPTOP: ubuntu14.04
+
 RPi2 : ubuntu14.04
 
 Joystick control RPi2 car ----> camera on RPi2 car moves -----> ORB_SLAM2 runs 
