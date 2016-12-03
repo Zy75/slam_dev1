@@ -10,7 +10,7 @@ Joystick control RPi2 car ----> camera on RPi2 car moves -----> ORB_SLAM2 runs
 
 note:
 
-1. Video compression is an additional heavy load on RPi2. Don't compress in camera driver. Use image_transport republish because it runs in a new thread and another CPU core on RPi2 can be used.  
+1. Video compression is an additional heavy load on RPi2. Don't compress in camera driver. Use image_transport republish because it runs in a new thread and another CPU core on RPi2 could be used.  
 
 2. ORB_SLAM2 loses track often, though relocation is possible. My car can only move forward, backward and rotation. Is this charasteristic not suitable for monocular visual slam?  
  
